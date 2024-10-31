@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Funny Feeling</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Funny Feeling, the moo gives me a feeling about unexperienced nostalgia...">
+		<meta name="keywords" content="Funny, Feeling, Funny Feeling, Team fortress 2, TF2, Team, Fortess, Nostalgia, ThatMintyLad">
+		<meta name="author" content="ThatMintyLad">
+		<style>
+			body {
+				background-color: black;
+			}
+			#cow {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.watch {
+				background-color: gray;
+				color: blue;
+                padding: 10px 15px;
+				border-radius: 22px;
+				margin-right: 5px;
+				position: fixed;
+				bottom: 5px;
+				right: 5px;
+				font: 12px monospace;
+			}
+			.watch a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	
+	<!-- Moo --!>
+	
+	<body>
+		<img id="cow" src="cow.jpg">
+		<div class="watch">
+			Site by
+			<a title="YouTube" href="https://www.youtube.com/@therealthatmintylad243">ThatMintyLad</a>
+       </div>
+		<audio id="moo">
+			<source src="moo.wav" type="audio/wav">
+			Your browser is outdated!
+		</audio>
+		<script>
+			const cowImage = document.getElementById('cow');
+			const mooSound = document.getElementById('moo');
+
+			cowImage.addEventListener('click', () => {
+				mooSound.play();
+});
+		</script>
+	</body>
+	
+</html>
